@@ -45,6 +45,7 @@ body {
 header {
   padding: 2rem;
   justify-self: center;
+  text-align: center;
 }
 
 nav button {
@@ -67,20 +68,18 @@ nav button {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 65ch;
+  line-height: 1.5rem;
 }
 
 #content h2 {
   font-weight: bold;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 #content img {
   width: 20rem;
   border-radius: 1%;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-}
-
-#content p {
-  max-width: 60ch;
-  line-height: 1.5rem;
 }
