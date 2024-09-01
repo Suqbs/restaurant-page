@@ -26,3 +26,58 @@ video {
   max-width: 100%;
 }
 /* CSS RESET ENDS HERE */
+
+:root {
+  --bg-color: #002233;
+  --nav-underline-color: rgb(165, 42, 42);
+  --text-color: rgb(255, 255, 255);
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: min-content 1fr;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  padding: 2rem;
+  justify-self: center;
+}
+
+nav button {
+  color: var(--text-color);
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-decoration: 3px wavy underline var(--nav-underline-color);
+
+/* fix this issue with text-color, it should work with --text-color */
+  &:hover {
+    color: rgba(var(--text-color, 0.7));
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#content h2 {
+  font-weight: bold;
+}
+
+#content img {
+  width: 20rem;
+  border-radius: 1%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+#content p {
+  max-width: 60ch;
+}
