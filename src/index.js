@@ -1,4 +1,4 @@
 import "./styles.css";
-import { LoadInitialPage } from "./initial-page-load";
+import { LoadPage } from "./page-load";
 
-LoadInitialPage();
+LoadPage();
