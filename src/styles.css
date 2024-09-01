@@ -54,6 +54,7 @@ nav button {
   background-color: transparent;
   border: none;
   text-decoration: 3px wavy underline var(--nav-underline-color);
+  cursor: pointer;
 
 /* fix this issue with text-color, it should work with --text-color */
   &:hover {
