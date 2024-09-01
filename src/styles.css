@@ -70,6 +70,7 @@ nav button {
 
 #content h2 {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 #content img {
@@ -80,4 +81,5 @@ nav button {
 
 #content p {
   max-width: 60ch;
+  line-height: 1.5rem;
 }
