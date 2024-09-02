@@ -28,16 +28,20 @@ video {
 /* CSS RESET ENDS HERE */
 
 :root {
-  --bg-color: #002233;
-  --nav-underline-color: rgb(165, 42, 42);
+  --bg-color: #4b124b;
+  --nav-underline-color: 213, 184, 144;
   --text-color: rgb(255, 255, 255);
+}
+
+hr {
+  width: 70%;
+  color: rgba(240, 248, 255, 0.733);
 }
 
 img {
   border-radius: 1%;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
-
 body {
   display: grid;
   justify-content: center;
@@ -59,12 +63,12 @@ nav button {
   padding: 0.5rem;
   background-color: transparent;
   border: none;
-  text-decoration: 3px wavy underline var(--nav-underline-color);
+  text-decoration: 3px wavy underline rgba(var(--nav-underline-color));
   cursor: pointer;
 
 /* fix this issue with text-color, it should work with --text-color */
   &:hover {
-    color: rgba(var(--text-color, 0.7));
+    text-decoration-color: rgba(var(--nav-underline-color), 0.7);
   }
 }
 
@@ -85,4 +89,25 @@ nav button {
 
 #content img {
   width: 20rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.card-title {
+  max-width: 30ch;
+}
+
+.card-intro {
+  max-width: 50ch;
+  text-wrap: balance;
+}
+
+.card img {
+  width: 25rem;
 }
