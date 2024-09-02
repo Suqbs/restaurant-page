@@ -1,4 +1,6 @@
 import "./styles.css";
-import { LoadPage } from "./page-load";
+import { LoadHomePage } from "./home-page";
 
-LoadPage();
+const content = document.getElementById("content");
+
+LoadHomePage(content);
