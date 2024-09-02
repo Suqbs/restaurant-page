@@ -33,6 +33,11 @@ video {
   --text-color: rgb(255, 255, 255);
 }
 
+img {
+  border-radius: 1%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
 body {
   display: grid;
   justify-content: center;
@@ -80,6 +85,4 @@ nav button {
 
 #content img {
   width: 20rem;
-  border-radius: 1%;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
