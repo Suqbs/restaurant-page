@@ -1,5 +1,14 @@
+import chefImage from "./image/chef.jpg";
+
+const image = document.createElement("img");
+image.src = chefImage;
+image.alt = "chef";
+
 const aboutSection = document.createElement("div");
 aboutSection.classList.add("about-section");
+
+const aboutParagraph = document.createElement("p");
+aboutParagraph.classList.add("about-paragraph");
 
 const tabTitle = document.createElement("h1");
 tabTitle.textContent = "About Furkan Restaurant";
@@ -22,13 +31,16 @@ ourCommitmentTitle.textContent = "Our Commitment";
 const ourCommitmentParagraph = document.createElement("p");
 ourCommitmentParagraph.textContent = "We are committed to providing our guests with an exceptional dining experience. We will continue to strive for excellence in all that we do, from the quality of our food to the warmth of our hospitality. We are grateful for the opportunity to serve our community and look forward to welcoming you to Furkan Restaurant.";
 
-aboutSection.appendChild(tabTitle);
-aboutSection.appendChild(about);
-aboutSection.appendChild(ourStoryTitle);
-aboutSection.appendChild(ourStoryParagraph);
-aboutSection.appendChild(ourCommitmentTitle);
-aboutSection.appendChild(ourCommitmentParagraph);
-
 export function LoadAboutPage(content) {
     content.appendChild(aboutSection);
 }
+
+aboutParagraph.appendChild(tabTitle);
+aboutParagraph.appendChild(about);
+aboutParagraph.appendChild(ourStoryTitle);
+aboutParagraph.appendChild(ourStoryParagraph);
+aboutParagraph.appendChild(ourCommitmentTitle);
+aboutParagraph.appendChild(ourCommitmentParagraph);
+
+aboutSection.appendChild(image);
+aboutSection.appendChild(aboutParagraph);

@@ -64,7 +64,8 @@ header {
 
 nav {
   display: flex;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -142,10 +143,21 @@ hr.round-style {
   font-weight: bold;
 }
 
-.about-section {
+.about-paragraph {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.about-section {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+}
+
+#content .about-section img {
+  width: 100%;
 }
 
 .title-in-about {
