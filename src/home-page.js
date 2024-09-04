@@ -1,6 +1,7 @@
 import coffeeImage from "./image/coffee.jpg";
 
 const title = document.createElement("h2");
+title.classList.add("welcoming-title");
 title.textContent = "A warm welcome to FURKAN RESTAURANT!";
 
 const image = document.createElement("img");

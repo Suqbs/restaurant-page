@@ -35,6 +35,10 @@ video {
   --grid-gap: rem;
   --between-card-gap: 1.5rem;
   --after-section-gap: 1rem;
+  --content-img-width: 20rem;
+  --card-img-width: 30rem;
+  --content-max-width: 65ch;
+  --cardIntro-max-width: 100ch;
 }
 
 img {
@@ -58,6 +62,13 @@ header {
   text-align: center;
 }
 
+nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 nav button {
   color: var(--text-color);
   font-size: 2rem;
@@ -77,18 +88,18 @@ nav button {
   flex-direction: column;
   align-items: center;
   gap: var(--between-card-gap);
-  max-width: 65ch;
+  max-width: var(--content-max-width);
   line-height: 1.5rem;
 }
 
-#content h2 {
+#content .welcoming-title {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
 }
 
 #content img {
-  width: 20rem;
+  width: var(--content-img-width);
 }
 
 .card {
@@ -101,15 +112,16 @@ nav button {
 
 .card-title {
   max-width: 30ch;
+  text-align: center;
 }
 
 .card-intro {
-  max-width: 50ch;
+  max-width: var(--cardIntro-max-width);
   text-wrap: balance;
 }
 
-.card img {
-  width: 25rem;
+#content .card img {
+  width: var(--card-img-width);
 }
 
 hr.round-style {
@@ -118,8 +130,25 @@ hr.round-style {
 }
 
 .section-title {
+  text-align: center;
   font-size: 2rem;
   text-decoration: solid underline white 3px;
   color: var(--section-color);
   margin-bottom: var(--after-section-gap);
+}
+
+.tab-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title-in-about {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
