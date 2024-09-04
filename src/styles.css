@@ -116,6 +116,14 @@ nav button {
   text-align: center;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: solid underline white 3px;
+  color: var(--section-color);
+  margin-bottom: var(--after-section-gap);
+}
+
 .card-intro {
   max-width: var(--cardIntro-max-width);
   text-wrap: balance;
@@ -128,19 +136,6 @@ nav button {
 hr.round-style {
   border: 4px solid 	#89dfc3;
   border-radius: 100%;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  text-decoration: solid underline white 3px;
-  color: var(--section-color);
-  margin-bottom: var(--after-section-gap);
-}
-
-.tab-title {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .about-paragraph {
@@ -158,6 +153,11 @@ hr.round-style {
 
 #content .about-section img {
   width: 100%;
+}
+
+.tab-title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .title-in-about {
