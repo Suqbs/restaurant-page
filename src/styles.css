@@ -46,7 +46,7 @@ video {
   overflow: hidden;
   z-index: 1;
 
-  width: var(--content-img-width);
+  max-width: var(--content-img-width);
   /* border */
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
@@ -158,6 +158,11 @@ nav button {
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
+}
+
+.card-price {
+  text-align: center;
+  font-weight: bold;
 }
 
 .section-title {

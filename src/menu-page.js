@@ -20,7 +20,8 @@ createCard(
   "Kebab Extravaganza",
   "Embark on a culinary adventure with our kebab platter, featuring a delicious assortment of grilled lamb, chicken, and beef kebabs. Served with rice, salad, and a side of Turkish bread.",
   kebabImage,
-  "kebab plate"
+  "kebab plate",
+  "10$"
 );
 
 createCard(
@@ -28,7 +29,8 @@ createCard(
   "Lamb Skewer Sensation",
   "Savor the tender and juicy lamb skewers in our Lamb Shish, grilled to perfection and bursting with flavor. A classic Turkish dish that is sure to please.",
   lambShishImage,
-  "lamb shish"
+  "lamb shish",
+  "10$"
 );
 
 createCard(
@@ -36,7 +38,8 @@ createCard(
   "Fiery Chicken Adana",
   "Experience the fiery heat of our Chicken Adana, spicy minced chicken kebabs that are packed with flavor. A must-try for those who love a little spice.",
   chickenAdanaImage,
-  "chicken Adana"
+  "chicken Adana",
+  "10$"
 );
 
 /* Beverages */
@@ -45,7 +48,8 @@ createCard(
   "Ayran Refreshment",
   "Quench your thirst with our Ayran, a refreshing buttermilk drink made with yogurt, water, and salt. A healthy and delicious beverage that is perfect for hot summer days.",
   ayranImage,
-  "ayran"
+  "ayran",
+  "2$"
 );
 
 createCard(
@@ -53,7 +57,8 @@ createCard(
   "Turkish Tea Time",
   "Refresh yourself with a cup of our Turkish Tea, brewed from high-quality tea leaves and served in traditional glass cups. A popular beverage enjoyed by people of all ages.",
   teaImage,
-  "tea"
+  "tea",
+  "1$"
 );
 
 createCard(
@@ -61,7 +66,8 @@ createCard(
   "Turkish Coffee Craze",
   "Experience the strong and aromatic flavor of our Turkish Coffee, brewed in a cezve and served in small cups. A traditional Turkish beverage that is perfect for a leisurely afternoon.",
   turkishCoffeImage,
-  "Turkish Coffee"
+  "Turkish Coffee",
+  "2$"
 );
 
 /* Desserts */
@@ -70,7 +76,8 @@ createCard(
   "Baklava Bliss",
   "Treat yourself to the sweet and decadent taste of our Baklava, crispy filo pastry layered with chopped nuts and sweetened syrup. A classic Turkish dessert that is sure to satisfy your sweet tooth.",
   baklavaImage,
-  "baklava"
+  "baklava",
+  "4$"
 );
 
 createCard(
@@ -78,7 +85,8 @@ createCard(
   "Turkish Delightful",
   "Enjoy the chewy and delightful texture of our Turkish Delight, made with rosewater and sugar. A traditional Turkish candy that comes in a variety of flavors.",
   turkishDelightImage,
-  "Turkish Delight"
+  "Turkish Delight",
+  "3$"
 );
 
 createCard(
@@ -86,7 +94,8 @@ createCard(
   "Kadayıf Heaven",
   "Indulge in the sweet and nutty goodness of our Kadayıf, shredded phyllo pastry soaked in syrup and topped with chopped walnuts. A rich and satisfying dessert.",
   kadayifImage,
-  "kadayıf"
+  "kadayıf",
+  "4$"
 );
 
 export function LoadMenuPage(content) {
@@ -95,13 +104,22 @@ export function LoadMenuPage(content) {
   createSection("Desserts", desserts, content);
 }
 
-function createCard(section, title, intro, imgSrc, imgAlt) {
+function createCard(section, title, intro, imgSrc, imgAlt, price) {
   const card = document.createElement("div");
   card.classList.add("card");
 
   const cardTitle = document.createElement("h2");
   cardTitle.classList.add("card-title");
   cardTitle.textContent = title;
+
+  const cardPrice = document.createElement("p");
+  cardPrice.classList.add("card-price");
+  cardPrice.textContent = price;
+
+  const cardInfo = document.createElement("div");
+  cardInfo.classList.add("card-info");
+  cardInfo.appendChild(cardTitle);
+  cardInfo.appendChild(cardPrice);
 
   const cardIntro = document.createElement("p");
   cardIntro.classList.add("card-intro");
@@ -115,7 +133,7 @@ function createCard(section, title, intro, imgSrc, imgAlt) {
   imageContainer.classList.add("image-container");
   imageContainer.appendChild(image);
 
-  card.appendChild(cardTitle);
+  card.appendChild(cardInfo);
   card.appendChild(cardIntro);
   card.appendChild(imageContainer);
 
