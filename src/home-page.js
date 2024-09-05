@@ -8,6 +8,10 @@ const image = document.createElement("img");
 image.src = foodImage;
 image.alt = "food";
 
+const imageContainer = document.createElement("div");
+imageContainer.classList.add("image-container");
+imageContainer.appendChild(image);
+
 const intro = document.createElement("p");
 intro.classList.add("intro");
 intro.textContent =
@@ -39,7 +43,7 @@ location.textContent = "Chicago, Illinois(IL), 60638";
 
 export function LoadHomePage(content) {
     content.appendChild(title);
-    content.appendChild(image);
+    content.appendChild(imageContainer);
     content.appendChild(intro);
     content.appendChild(workingHoursTitle);
     content.appendChild(workingHours);
