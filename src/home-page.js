@@ -19,9 +19,8 @@ intro.textContent =
 
 const workingHoursTitle = document.createElement("h2");
 workingHoursTitle.classList.add("small-title");
+workingHoursTitle.classList.add("centering-text");
 workingHoursTitle.textContent = "Working Hours";
-
-
 
 const weekDays = document.createElement("p");
 weekDays.textContent = "Weekdays: 1am - 1pm (CDT)";

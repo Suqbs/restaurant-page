@@ -140,6 +140,10 @@ nav button {
   font-size: 1.2rem;
 }
 
+.centering-text {
+  text-align: center;
+}
+
 #content .welcoming-title {
   font-weight: bold;
   font-size: 1.2rem;
