@@ -34,7 +34,8 @@ video {
   --section-color: white;
   --grid-gap: rem;
   --between-card-gap: 1.5rem;
-  --after-section-gap: 1rem;
+  --after-section-gap: 3rem;
+  --after-section-title: 0;
   --content-img-width: 30rem;
   --card-img-width: 30rem;
   --content-max-width: 65ch;
@@ -168,8 +169,12 @@ nav button {
   font-size: 2rem;
   text-decoration: solid underline white 3px;
   color: var(--section-color);
-  margin-bottom: var(--after-section-gap);
+  margin-bottom: var(--after-section-title);
   line-height: normal;
+}
+
+.section-title:not(:first-child) {
+  margin-top: var(--after-section-gap);
 }
 
 .card-intro {
