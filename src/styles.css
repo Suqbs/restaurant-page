@@ -113,6 +113,8 @@ nav button {
 
 .card-title {
   max-width: 30ch;
+  font-size: 1.1rem;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -155,12 +157,12 @@ hr.round-style {
   width: 100%;
 }
 
-.tab-title {
+.big-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.title-in-about {
+.small-title {
   font-weight: bold;
   font-size: 1.2rem;
 }
