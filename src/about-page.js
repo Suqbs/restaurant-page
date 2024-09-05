@@ -11,7 +11,7 @@ const aboutParagraph = document.createElement("p");
 aboutParagraph.classList.add("about-paragraph");
 
 const tabTitle = document.createElement("h1");
-tabTitle.textContent = "About Furkan Restaurant Test Test Test";
+tabTitle.textContent = "About Furkan Restaurant";
 tabTitle.classList.add("big-title");
 
 const about = document.createElement("p");
