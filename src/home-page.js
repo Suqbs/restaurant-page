@@ -1,12 +1,12 @@
-import coffeeImage from "./image/coffee.jpg";
+import foodImage from "./image/food.jpg";
 
 const title = document.createElement("h2");
 title.classList.add("welcoming-title");
 title.textContent = "A warm welcome to FURKAN RESTAURANT!";
 
 const image = document.createElement("img");
-image.src = coffeeImage;
-image.alt = "coffee";
+image.src = foodImage;
+image.alt = "food";
 
 const intro = document.createElement("p");
 intro.classList.add("intro");
