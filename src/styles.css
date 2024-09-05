@@ -157,11 +157,9 @@ nav button {
   max-width: 30ch;
   font-size: 1.1rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .card-price {
-  text-align: center;
   font-weight: bold;
 }
 
@@ -169,6 +167,7 @@ nav button {
   text-align: center;
   font-size: 2rem;
   text-decoration: solid underline white 3px;
+  line-height: 2.5rem;
   color: var(--section-color);
   margin-bottom: var(--after-section-gap);
 }
