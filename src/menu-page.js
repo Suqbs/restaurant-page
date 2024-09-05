@@ -2,6 +2,14 @@ import kebabImage from "./image/kebab-plate.jpg";
 import lambShishImage from "./image/lamb-shish.jpg";
 import chickenAdanaImage from "./image/chicken-adana.jpg";
 
+import ayranImage from "./image/ayran.jpg";
+import teaImage from "./image/tea.jpg";
+import turkishCoffeImage from "./image/turkish-coffee.jpg";
+
+import baklavaImage from "./image/baklava.jpg";
+import turkishDelightImage from "./image/turkish-delight.jpg";
+import kadayifImage from "./image/kadayif.jpg";
+
 const mainDishes = [];
 const desserts = [];
 const beverages = [];
@@ -33,6 +41,8 @@ createCard(
 
 export function LoadMenuPage(content) {
   createSection("Main Dishes", mainDishes, content);
+  createSection("Beverages", beverages, content);
+  createSection("Desserts", desserts, content);
 }
 
 function createCard(section, title, intro, imgSrc, imgAlt) {
@@ -51,9 +61,13 @@ function createCard(section, title, intro, imgSrc, imgAlt) {
   image.src = imgSrc;
   image.alt = imgAlt;
 
+  const imageContainer = document.createElement("div");
+  imageContainer.classList.add("image-container");
+  imageContainer.appendChild(image);
+
   card.appendChild(cardTitle);
   card.appendChild(cardIntro);
-  card.appendChild(image);
+  card.appendChild(imageContainer);
 
   section.push(card);
 }

@@ -41,9 +41,6 @@ video {
   --cardIntro-max-width: 100ch;
 }
 
-img {
-}
-
 #content .image-container {
   position: relative;
   overflow: hidden;
@@ -76,7 +73,7 @@ img {
   }
 
   &:hover::after {
-    opacity: 0.2;
+    opacity: 0.3;
   }
 }
 
