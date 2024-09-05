@@ -39,6 +39,56 @@ createCard(
   "chicken Adana"
 );
 
+/* Beverages */
+createCard(
+  beverages,
+  "Ayran Refreshment",
+  "Quench your thirst with our Ayran, a refreshing buttermilk drink made with yogurt, water, and salt. A healthy and delicious beverage that is perfect for hot summer days.",
+  ayranImage,
+  "ayran"
+);
+
+createCard(
+  beverages,
+  "Turkish Tea Time",
+  "Refresh yourself with a cup of our Turkish Tea, brewed from high-quality tea leaves and served in traditional glass cups. A popular beverage enjoyed by people of all ages.",
+  teaImage,
+  "tea"
+);
+
+createCard(
+  beverages,
+  "Turkish Coffee Craze",
+  "Experience the strong and aromatic flavor of our Turkish Coffee, brewed in a cezve and served in small cups. A traditional Turkish beverage that is perfect for a leisurely afternoon.",
+  turkishCoffeImage,
+  "Turkish Coffee"
+);
+
+/* Desserts */
+createCard(
+  desserts,
+  "Baklava Bliss",
+  "Treat yourself to the sweet and decadent taste of our Baklava, crispy filo pastry layered with chopped nuts and sweetened syrup. A classic Turkish dessert that is sure to satisfy your sweet tooth.",
+  baklavaImage,
+  "baklava"
+);
+
+createCard(
+  desserts,
+  "Turkish Delightful",
+  "Enjoy the chewy and delightful texture of our Turkish Delight, made with rosewater and sugar. A traditional Turkish candy that comes in a variety of flavors.",
+  turkishDelightImage,
+  "Turkish Delight"
+);
+
+createCard(
+  desserts,
+  "Kadayıf Heaven",
+  "Indulge in the sweet and nutty goodness of our Kadayıf, shredded phyllo pastry soaked in syrup and topped with chopped walnuts. A rich and satisfying dessert.",
+  kadayifImage,
+  "kadayıf"
+);
+
 export function LoadMenuPage(content) {
   createSection("Main Dishes", mainDishes, content);
   createSection("Beverages", beverages, content);
