@@ -90,7 +90,17 @@ nav button {
   align-items: center;
   gap: var(--between-card-gap);
   max-width: var(--content-max-width);
-  line-height: 1.5rem;
+  line-height: 1.6rem;
+}
+
+.big-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.small-title {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 #content .welcoming-title {
@@ -157,12 +167,13 @@ hr.round-style {
   width: 100%;
 }
 
-.big-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+.working-hours {
+  text-align: center;
+  padding: 0 2rem;
+  border-left: 1px solid aliceblue;
+  border-right: 1px solid aliceblue;
 
-.small-title {
-  font-weight: bold;
-  font-size: 1.2rem;
+  & :first-child {
+    margin-bottom: 0.5rem;
+  }
 }
