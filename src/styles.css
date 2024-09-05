@@ -128,7 +128,7 @@ nav button {
   gap: var(--between-card-gap);
   max-width: var(--content-max-width);
   line-height: 1.6rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .big-title {
