@@ -36,10 +36,9 @@ video {
   --between-card-gap: 1.5rem;
   --after-section-gap: 3rem;
   --after-section-title: 0;
-  --content-img-width: 30rem;
+  --content-img-width: 32rem;
   --card-img-width: 30rem;
-  --content-max-width: 65ch;
-  --cardIntro-max-width: 100ch;
+  --content-max-width: 70ch;
 }
 
 #content .image-container {
@@ -128,7 +127,7 @@ nav button {
   gap: var(--between-card-gap);
   max-width: var(--content-max-width);
   line-height: 1.6rem;
-  padding: 0 1rem;
+  padding: 0 0.3rem;
 }
 
 .big-title {
@@ -183,7 +182,6 @@ nav button {
 }
 
 .card-intro {
-  max-width: var(--cardIntro-max-width);
   text-wrap: balance;
 }
 
