@@ -169,6 +169,7 @@ nav button {
   text-decoration: solid underline white 3px;
   color: var(--section-color);
   margin-bottom: var(--after-section-gap);
+  line-height: normal;
 }
 
 .card-intro {
